@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'RegiWorkoutV1.views.home', name='home'),
+#     url(r'^$', 'RegiWorkoutV1.views.home', name='home'),
     # url(r'^RegiWorkoutV1/', include('RegiWorkoutV1.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -14,4 +14,5 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
      url(r'^admin/', include(admin.site.urls)),
+     url(r'^polls/', include('polls.urls')),
 )
